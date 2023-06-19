@@ -1,3 +1,4 @@
+
 FROM maven:4.0.0
 
 RUN evn clean package -DskipTests
