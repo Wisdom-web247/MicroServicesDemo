@@ -21,24 +21,23 @@ public class PersonController {
         this.personService = personService;
     }
 
-    @GetMapping(value = "getAllPersons")
+    @GetMapping(value = "allPersons")
     public List<Person> getAllPersons() {
         return personService.getAllPersons();
     }
 
-    @GetMapping(value = "getPersonById/{id}")
+    @GetMapping(value = "personById/{id}")
     public Person getPersonById(@PathVariable Long id) {
         return personService.getPersonById(id);
     }
 
-    @PostMapping(value = "/addPerson")
+    @PostMapping(value = "/newPerson")
     public String addPerson(@RequestBody Person person) {
         personService.addPerson(person);
         return "Person added successfully";
     }
 
-
-    @PutMapping(value = "/updatePerson/{id}")
+    @PutMapping(value = "/existingPerson/{id}")
     public String updatePerson(@PathVariable Long id, @RequestBody Person person) {
         personService.updatePerson(id, person);
         return "Person updated successfully";
