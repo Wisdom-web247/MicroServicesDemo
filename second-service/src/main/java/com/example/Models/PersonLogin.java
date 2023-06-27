@@ -1,5 +1,14 @@
 package com.example.Models;
 
+
+import com.sun.xml.internal.ws.developer.SchemaValidation;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@SchemaValidation
+//@NoArgsConstructor
+@Slf4j
 public class PersonLogin {
 
     //Add Dependencies first before using the annotations
