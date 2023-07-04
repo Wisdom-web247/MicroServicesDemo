@@ -11,14 +11,27 @@ public class PersonLogin {
     @Max(32)*/
     private String password;
 
+
+    private String confirmPassword;
+
+
     //Default Constructor
     public PersonLogin() {
     }
 
     //Parameterized Constructor
-    public PersonLogin(String username, String password) {
+    public PersonLogin(String username, String password, String confirmPassword) {
         this.username = username;
         this.password = password;
+        this.confirmPassword = confirmPassword;
+    }
+
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 
     public String getUsername() {
