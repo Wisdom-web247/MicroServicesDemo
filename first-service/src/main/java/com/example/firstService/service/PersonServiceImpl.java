@@ -10,6 +10,7 @@ import java.util.List;
 @Service
 public class PersonServiceImpl implements PersonService {
 
+    //check if its loose coupling
     //Creating an instance
     private final PersonRepository personRepository;
 
