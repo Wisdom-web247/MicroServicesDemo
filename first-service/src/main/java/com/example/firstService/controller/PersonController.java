@@ -10,6 +10,7 @@ import java.util.List;
 
 import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 
+@CrossOrigin("http://localhost")
 @RestController
 @RequestMapping(value = "/api/person")
 public class PersonController {
